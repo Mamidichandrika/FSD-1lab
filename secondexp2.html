@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+        <style>
+            body{
+                margin:0;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                padding: 50px;
+                
+            }
+           .form{
+            border:3px solid black;
+            margin:30px auto;
+            padding: 20px;
+            width:90%;
+           }
+        </style>
+</head>
+<body>
+    <form method="post"action="#">
+        <div class="form">
+            <h1 style="text-align:center">Registration Form</h1>
+        <label for ="name">FullName:</label><br>
+        <input type="text" name="name" id="name" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required><br>
+        <label for="mobile number">Mobile Number:</label><br>
+        <input type="number" name="mobile number" id="mobile number"required><br>
+        <label for="DOB">Date Of Birth:</label><br>
+        <input type="date"name="DOB" id="DOB"><br>
+        <label type="text">Branch</label><br>
+        <input type="radio" name="branch" id="it" value="IT" >
+        <label for="IT">IT</label><br>
+        <input type="radio" name="branch" id="ece" value="ECE">
+        <label for="ECE">ECE</label><br>
+        <input type="radio" name="branch" id="cse" value="CSE">
+        <label for="CSE">CSE</label><br>
+        <input type="radio" name="branch" id="mech" value="Mech">
+        <label for="Mech">Mech</label><br>
+        <input type="radio"name="branch"id="civil" value="Civil">
+        <label for="Civil">Civil</label><br>
+        <input type="radio"name="branch"id="ect" value="ECT">
+        <label for="ECT">ECT</label><br>
+        <input type="radio"name="branch"id="aiml" value="AIML">
+        <label for="AIML">AIML</label><br>
+        <input type="radio"name="EEE"id="eee" value="EEE">
+        <label for="EEE">EEE</label><br>
+        <label for="dist">District Name:</label><br>
+        <select name="District">
+        <option value="">--Select--</option>
+        <option value="">Anakapali</option>
+        <option value="">Ananthapuram</option>
+        <option value="">Bapatla</option>
+        <option value="">Chittor</option>
+        <option value="">East Godavari</option>
+        <option value="">Eluru</option>
+        <option value="">Guntur</option>
+        <option value="">Kakinada</option>
+        <option value="">Krishna</option>
+        <option value="">Srikakulam</option>
+        <option value="">Tirupati</option>
+        </select><br>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="enter your address here"></textarea><br>
+        <label for ="RED ANTS CLUB">RED ANTS CLUB</label><br>
+        <input type="checkbox" name="club" id="nss"value="NSS">
+        <label for="NSS">NSS</label><br>
+        <input type="checkbox" name="club" id="club"value="gardening">
+        <label for="gardening">Gardening</label><br>
+        <input type="checkbox" name="club" id="sports"value="sports">
+        <label for="sports">Sports</label><br>
+        <input type="checkbox" name="club" id="culinary"value="culinary" checked>
+        <label for="culinary">Culinary</label><br>
+        <input type="checkbox" name="club" id="photography"value="photography">
+        <label for="photography">Photography</label><br>
+        <input type="checkbox" name="club" id="cultural"value="cultural">
+        <label for="cultural">Cultural</label><br>
+        <input type="checkbox" name="club" id="travelling"value="travelling">
+        <label for="travelling">Travelling</label><br>
+        <button type="submit">Submit</button> 
+        <button type="reset" >Reset</button>
+        </div>
+    </form>
+</body>
+</html>

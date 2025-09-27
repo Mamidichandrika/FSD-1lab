@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Different Ways to Take Input</title>
+  <script>
+    function showInput() {
+      // Taking input using prompt box
+      var name = prompt("Enter your name:");
+
+      // Taking input from a text input box
+      var age = document.getElementById("ageInput").value;
+
+      // Taking input from a select dropdown
+      var color = document.getElementById("colorSelect").value;
+
+      // Display the collected inputs
+      alert("Name (prompt): " + name + "\nAge (text box): " + age + "\nFavorite Color (dropdown): " + color);
+
+      // Display inside the page
+      document.getElementById("display").innerHTML = 
+        "<b>Name:</b> " + name + "<br>" +
+        "<b>Age:</b> " + age + "<br>" +
+        "<b>Favorite Color:</b> " + color;
+    }
+  </script>
+</head>
+<body>
+  <h2>Ways to Take Input Demo</h2>
+
+  <label for="ageInput">Enter your age:</label>
+  <input type="number" id="ageInput" placeholder="Age"><br><br>
+
+  <label for="colorSelect">Select your favorite color:</label>
+  <select id="colorSelect">
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Green">Green</option>
+    <option value="Pink">Pink</option>
+    <option value="White">White</option>
+    <option value="Black">Black</option>
+    <option value="Yellow">Yellow</option>
+    <option value="violet">Violet</option>
+  </select><br><br>
+
+  <button onclick="showInput()">Show Inputs</button>
+
+  <div id="display" style="margin-top:20px; color: green;"></div>
+</body>
+</html>

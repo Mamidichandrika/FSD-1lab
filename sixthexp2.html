@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Different Ways to Display Output</title>
+  <script>
+    function displayOutput() {
+      // Display output using alert box
+      alert("This is an alert box output!");
+
+      // Display output using document.write()
+      document.write("<h3>This output is from document.write()</h3>");
+
+      // Display output inside an element using innerHTML
+      document.getElementById("output").innerHTML = "This output is using innerHTML.";
+
+      // Display output in the console
+      console.log("This output is displayed in the browser console.");
+    }
+  </script>
+</head>
+<body>
+  <h2>Ways to Display Output Demo</h2>
+  <button onclick="displayOutput()">Show Different Outputs</button>
+  <div id="output" style="margin-top:20px; color: blue;"></div>
+  <p>Check the browser console for console output.</p>
+</body>
+</html>

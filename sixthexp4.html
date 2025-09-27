@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voter Eligibility</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 8px 12px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Prompt for name and age
+    var name = prompt("Enter your name:");
+    var age = prompt("Enter your age:");
+    
+    // Convert age to a number
+    age = Number(age);
+
+    // Determine voter eligibility
+    var canVote = (age >= 18) ? "Can Vote" : "Cannot Vote";
+
+    // Display results in a table
+    document.write("<table>");
+    document.write("<tr><th>Name</th><th>Age</th><th>Eligibility</th></tr>");
+    document.write("<tr><td>" + name + "</td><td>" + age + "</td><td>" + canVote + "</td></tr>");
+    document.write("</table>");
+  </script>
+</body>
+</html>

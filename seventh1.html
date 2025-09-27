@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document Object Demo</title>
+</head>
+<body>
+
+  <h1 id="mainHeading">Welcome!</h1>
+  <button onclick="showDocumentInfo()">Show Document Info</button>
+  <div id="info"></div>
+
+  <script>
+    function showDocumentInfo() {
+      // Use document properties
+      var title = document.title;
+      var url = document.URL;
+
+      // Create a new paragraph element
+      var para = document.createElement("p");
+      para.textContent = "Document Title: " + title + " | URL: " + url;
+
+      // Add the paragraph to the 'info' div using document.getElementById() method
+      document.getElementById("info").appendChild(para);
+
+      // Use document.write (Note: this will overwrite the whole page if used after the page is loaded)
+      // Uncomment the next line to see its effect
+      // document.write("This is written using document.write()");
+    }
+  </script>
+</body>
+</html>

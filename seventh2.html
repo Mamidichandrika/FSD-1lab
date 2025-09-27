@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Example</title>
+</head>
+<body>
+  <button onclick="showAlert()">Show Alert</button>
+  <button onclick="getUserInput()">Get User Input</button>
+  <button onclick="showWindowSize()">Show Window Size</button>
+  <button onclick="printPage()">Print Page</button>
+  <div id="output"></div>
+  <script>
+    // Method: alert()
+    function showAlert() {
+      window.alert("This is an alert from the window object!");
+    }
+
+    // Method: prompt()
+    function getUserInput() {
+      var name = window.prompt("What is your name?");
+      document.getElementById("output").innerHTML = "Hello " + name + "!";
+    }
+
+    // Properties: innerWidth, innerHeight
+    function showWindowSize() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      document.getElementById("output").innerHTML = 
+        "Window size: " + w + " x " + h;
+    }
+
+    // Method: print()
+    function printPage() {
+      window.print();
+    }
+  </script>
+</body>
+</html>

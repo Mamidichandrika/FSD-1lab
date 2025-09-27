@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Properties and Methods</title>
+  <script>
+    function showWindowProperties() {
+      alert("Window Width: " + window.innerWidth + "px\n" +
+            "Window Height: " + window.innerHeight + "px\n" +
+            "URL of this page: " + window.location.href);
+    }
+
+    function openNewTab() {
+      window.open("https://www.example.com", "_blank");
+    }
+
+    function closeWindow() {
+      // This will only work if the window was opened by script
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  <h2>Window Object Demo</h2>
+  
+  <button onclick="showWindowProperties()">Show Window Properties</button>
+  <br><br>
+  
+  <button onclick="openNewTab()">Open New Tab</button>
+  <br><br>
+  
+  <button onclick="closeWindow()">Try Close Window</button>
+  <p>Note: Closing the window works only if opened by script.</p>
+</body>
+</html>

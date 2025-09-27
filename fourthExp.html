@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Example</title>
+  <style>
+    /* i. SIMPLE SELECTORS */
+    p { color: blue; }                  /* element selector */
+    #unique { color: red; }             /* id selector */
+    .highlight { background: yellow; }  /* class selector */
+    h1, h2 { text-decoration: underline; } /* group selector */
+    * { font-family: Arial, sans-serif; }  /* universal selector */
+
+    /* ii. COMBINATOR SELECTORS */
+    div p { font-size: 14px; }         /* descendant selector */
+    div > p { border: 1px solid green; } /* child selector */
+    h2 + p { font-style: italic; }     /* adjacent sibling */
+    h2 ~ p { background: #f0f0f0; }    /* general sibling */
+
+    /* iii. PSEUDO-CLASS SELECTORS */
+    a:hover { color: orange; }         /* hover effect */
+    p:first-child { font-weight: bold; } /* first child */
+    input:focus { border: 2px solid blue; } /* input focus */
+
+    /* iv. PSEUDO-ELEMENT SELECTORS */
+    p::first-line { color: darkgreen; }   /* first line */
+    p::first-letter { font-size: 20px; }  /* first letter */
+    h1::after { content: " 🌟"; }         /* after element */
+
+    /* v. ATTRIBUTE SELECTORS */
+    input[type="text"] { background: #e0f7fa; }
+    a[target="_blank"] { color: purple; }
+  </style>
+</head>
+<body>
+  <h1 id="unique">CSS Selector Demo</h1>
+  <h2 class="highlight">Simple and Combinator Selectors</h2>
+  
+  <div>
+    <p>This is a paragraph inside div (child + descendant).</p>
+    <span>
+      <p>Nested paragraph inside span (descendant only).</p>
+    </span>
+  </div>
+  
+  <p>Paragraph after h2 (adjacent sibling).</p>
+  <p>Another paragraph after h2 (general sibling).</p>
+  
+  <a href="https://example.com" target="_blank">External Link</a><br>
+  <a href="https://openai.com">Normal Link</a>
+  
+  <form>
+    <input type="text" placeholder="Text input"><br>
+    <input type="password" placeholder="Password input"><br>
+  </form>
+</body>
+</html>

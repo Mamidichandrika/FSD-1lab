@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Color Reference Definitions</title>
+  <style>
+    :root {
+      --custom-color: #8e44ad;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .color-sample {
+      padding: 15px;
+      margin: 10px 0;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .named-color {
+      background-color: red;
+    }
+
+    .hex-color {
+      background-color: #3498db;
+    }
+
+    .rgb-color {
+      background-color: rgb(46, 204, 113);
+    }
+
+    .rgba-color {
+      background-color: rgba(231, 76, 60, 0.8);
+    }
+
+    .hsl-color {
+      background-color: hsl(39, 100%, 50%);
+    }
+
+    .hsla-color {
+      background-color: hsla(300, 100%, 25%, 0.5);
+    }
+
+    .variable-color {
+      background-color: var(--custom-color);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Various Reference CSS Color</h1>
+
+  <div class="color-sample named-color">
+    <strong>Named Color:</strong> Using predefined color keywords like <code>red</code>, <code>blue</code>, or <code>green</code>.
+  </div>
+
+  <div class="color-sample hex-color">
+    <strong>Hexadecimal Color:</strong> Specifying colors with a <code>#</code> followed by six hexadecimal digits representing red, green, and blue (e.g., <code>#3498db</code>).
+  </div>
+
+  <div class="color-sample rgb-color">
+    <strong>RGB Color:</strong> Using the <code>rgb()</code> function with red, green, and blue values ranging from 0 to 255 (e.g., <code>rgb(46, 204, 113)</code>).
+  </div>
+
+  <div class="color-sample rgba-color">
+    <strong>RGBA Color:</strong> Like <code>rgb()</code> but with an alpha channel for opacity ranging from 0 (transparent) to 1 (opaque) (e.g., <code>rgba(231, 76, 60, 0.6)</code>).
+  </div>
+
+  <div class="color-sample hsl-color">
+    <strong>HSL Color:</strong> Using hue (0-360 degrees), saturation (%), and lightness (%) to define colors (e.g., <code>hsl(39, 100%, 50%)</code>).
+  </div>
+
+  <div class="color-sample hsla-color">
+    <strong>HSLA Color:</strong> Same as <code>hsl()</code>, but with an alpha (opacity) value from 0 to 1 (e.g., <code>hsla(300, 100%, 25%, 0.7)</code>).
+  </div>
+
+  <div class="color-sample variable-color">
+    <strong>CSS Variable:</strong> Using a custom property defined with <code>--name</code> and accessed via <code>var(--name)</code> for reusable colors (e.g., <code>var(--custom-color)</code>).
+  </div>
+
+</body>
+</html>

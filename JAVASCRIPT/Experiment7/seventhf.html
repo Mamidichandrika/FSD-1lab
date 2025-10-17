@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>RegExp Object Example</title></head>
+<body>
+  <script>
+    var pattern = /Java\w+/g;         // Matches 'Java' followed by one or more word characters
+    var testString = "JavaScript and JavaBeans are Java-based.";
+    document.write("<b>Test Pattern:</b> " + pattern.test(testString) + "<br>");        // true
+    document.write("<b>First Match:</b> " + pattern.exec(testString)[0] + "<br>");     // 'JavaScript'
+    document.write("<b>All Matches:</b> " + testString.match(pattern) + "<br>");         // ['JavaScript', 'JavaBeans']
+  </script>
+</body>
+</html>

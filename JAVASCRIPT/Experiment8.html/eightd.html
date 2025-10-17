@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Object Looping</title></head>
+<body>
+  <script>
+    let student = {name: "Ravi", age: 20, marks: 85};
+    document.write("<b>Using for-in:</b><br>");
+    for(let key in student) {
+      document.write(key + ": " + student[key] + "<br>");
+    }
+
+    // Arrays for forEach and for-of
+    let nums = [2, 4, 6];
+    document.write("<br><b>Using forEach:</b><br>");
+    nums.forEach(function(n) { document.write(n + "<br>"); });
+
+    document.write("<br><b>Using for-of:</b><br>");
+    for(let value of nums) {
+      document.write(value + "<br>");
+    }
+  </script>
+</body>
+</html>

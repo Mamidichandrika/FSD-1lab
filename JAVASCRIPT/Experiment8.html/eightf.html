@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Denomination Breakdown</title></head>
+<body>
+  <script>
+    let amount = parseInt(prompt("Enter deposited amount:"));
+    let denominations = [100, 50, 20, 10, 5, 2, 1];
+    for(let denom of denominations) {
+      let count = Math.floor(amount / denom);
+      if(count) {
+        document.write(count + " - " + denom + "'s<br>");
+        amount = amount % denom;
+      }
+    }
+  </script>
+</body>
+</html>

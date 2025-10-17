@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Date Object Example</title></head>
+<body>
+  <script>
+    var now = new Date();
+    document.write("<b>Current Date:</b> " + now + "<br>");
+    document.write("<b>Year:</b> " + now.getFullYear() + "<br>");
+    document.write("<b>Month (0-11):</b> " + now.getMonth() + "<br>");
+    document.write("<b>Day of Month:</b> " + now.getDate() + "<br>");
+    document.write("<b>Hours:</b> " + now.getHours() + "<br>");
+    document.write("<b>Minutes:</b> " + now.getMinutes() + "<br>");
+    document.write("<b>Milliseconds since Jan 1, 1970:</b> " + now.getTime() + "<br>");
+    now.setDate(now.getDate() + 5); // Adds 5 days
+    document.write("<b>Date + 5 days:</b> " + now + "<br>");
+  </script>
+</body>
+</html>
